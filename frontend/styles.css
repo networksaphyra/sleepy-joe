@@ -2,6 +2,10 @@
     font-family: "Nunito";
     src: url("Nunito/static/Nunito-SemiBoldItalic.ttf");
   }
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("Ubuntu/Ubuntu-Bold.ttf");
+  }
   
   body {
     font-family: sans-serif;
@@ -55,7 +59,7 @@
   }
   
   .logo-brand {
-    font-family: "Nunito";
+    font-family: "Ubuntu";
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -72,6 +76,7 @@
   .brand-name {
     font-size: 1.5em;
     font-weight: bold;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
   }
   
   .nav-links {
@@ -96,6 +101,42 @@
   
   .nav-link:hover {
     background-color: #bdc3c7;
+  }
+
+  .narrate-body {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* Adjustments for better responsiveness */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100px;
+      padding: 10px;
+    }
+  }
+
+  .story-text {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .story-text:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Adjustments for better readability */
+  @media (max-width: 768px) {
+    .story-text {
+      font-size: 0.9em;
+      padding: 8px;
+    }
   }
   
   .container {
