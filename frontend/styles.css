@@ -1,0 +1,203 @@
+  @font-face {
+    font-family: "Nunito";
+    src: url("Nunito/static/Nunito-SemiBoldItalic.ttf");
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 35vh;
+    height: 100vh;
+    color: #444;
+    padding: 30px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .conversation-box {
+    flex: 1;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+    overflow-y: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .message-client {
+    display: flex;
+    align-self: flex-start;
+    margin-right: auto;
+    color: white;
+    background-color: #3498db;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    max-width: 30%;
+  }
+  
+  .message-server {
+    display: flex;
+    align-self: flex-end;
+    margin-left: auto;
+    color: black;
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    max-width: 30%;
+  }
+  
+  .logo-brand {
+    font-family: "Nunito";
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-right: 2px solid #555;
+    padding-right: 10px;
+  }
+  
+  .brand-name {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-link {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
+    background-color: #dfe6e9;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    border: none;
+    outline: none;
+  }
+  
+  .nav-link:hover {
+    background-color: #bdc3c7;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+  
+  .input-container {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: calc(40vh + 20px);
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.2s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #555;
+  }
+  
+  .selfie-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+   
+
+  .dark-theme {
+    background-color: #1f1f1f;
+    color: #ccc;
+  }
+  
+  .dark-theme .sidebar {
+    color: #999;
+    border-right: 1px solid #444;
+  }
+  
+  .dark-theme .conversation-box {
+    background-color: #292929;
+    color: #eee;
+  }
+  
+  .dark-theme .message-client {
+    color: white;
+    background-color: #2c3e50;
+  }
+  
+  .dark-theme .message-server {
+    color: black;
+    background-color: #34495e;
+  }
+  
+  .dark-theme .nav-link {
+    background-color: #333;
+    color: #eee;
+  }
+  
+  .dark-theme .nav-link:hover {
+    background-color: #555;
+  }
+  
+  .dark-theme .input-container {
+    background-color: #333;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark-theme .submit-button {
+    background-color: #555;
+    color: white;
+  }
+  
+  .dark-theme .selfie-image {
+    border-radius: 8px;
+    filter: brightness(0.8);
+  }
