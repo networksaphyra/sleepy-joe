@@ -152,6 +152,7 @@ let musicCount = 2;
         }
 
     window.addEventListener('load', displayStories);
+    window.addEventListener('click', displayStories);
     themeSwitch.addEventListener("click", toggleTheme);
     submitElement.addEventListener("click", function () {
         let content = inputElement.value;
